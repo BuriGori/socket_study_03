@@ -1,0 +1,23 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create
+    generate-ddl: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/ws_db
+    username: root
+    password: root
+  devtools:
+    restart:
+      enabled: true
+server:
+  port: 8087
